@@ -1,0 +1,108 @@
+/* General styles */
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: radial-gradient(circle, rgba(58,58,58,1) 0%, rgba(0,0,0,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: #fff;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+h1 i {
+    font-size: 2.5rem;
+    padding: 10px;
+    color: #ffab00;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    width: 320px;
+    text-align: center;
+}
+
+.input {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    text-align: right;
+}
+
+.button {
+    padding: 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 65px;
+    font-size: 1.3rem;
+    background: #ffab00;
+    color: #fff;
+    transition: background 0.3s ease;
+}
+
+.button:hover {
+    background: #ff8c00;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.row:nth-child(2) .button {
+    background: #f44336;
+}
+
+.row:nth-child(2) .button:hover {
+    background: #d32f2f;
+}
+
+.row:nth-child(2) .button:nth-child(4) {
+    background: #03a9f4;
+}
+
+.row:nth-child(2) .button:nth-child(4):hover {
+    background: #0288d1;
+}
+
+.row input {
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    width: calc(100% - 20px);
+    box-sizing: border-box;
+}
+
+.text-center::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: red;
+    transition: width 0.3s ease;
+    margin: 0 auto;
+}
+
+.text-center:hover::after {
+    width: 20%;
+}
